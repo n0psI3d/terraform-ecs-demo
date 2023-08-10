@@ -46,9 +46,7 @@ docker push <ecr_repo_url>:<version>
 ```
 ![image](https://github.com/n0psI3d/terraform-ecs-demo/blob/main/Screenshots/Pasted%20image%2020230810140431.png)
 
-![image](https://github.com/n0psI3d/terraform-ecs-demo/blob/main/Screenshots/Pasted%20image%2020230810140703.png)
-
-The following command will deploy a task definition
+The following command will apply the ecs terraform project with the version provided.
 ```bash
 cd infra/accounts/dev/ecs; terraform apply -var="release_version=v1.0.0"
 ```
@@ -57,3 +55,6 @@ The results can be viewed in the AWS Dashboard:
 ![image](https://github.com/n0psI3d/terraform-ecs-demo/blob/main/Screenshots/Pasted%20image%2020230810133459.png)
 
 ![image](https://github.com/n0psI3d/terraform-ecs-demo/blob/main/Screenshots/Pasted%20image%2020230810133641.png)
+
+Once everything is done, the instance should be deployed.
+![image](https://github.com/n0psI3d/terraform-ecs-demo/blob/main/Screenshots/Pasted%20image%2020230810140703.png)
